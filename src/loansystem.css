@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+}
+.fullscreen {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2.1fr 9fr;
+}
+.sideleft {
+    background-color: white;
+    border-right: 1px solid lightgray;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+.sideright {
+    background-color: whitesmoke;
+}
+.nl{
+    &:hover{
+        background-color: #2968ce;
+        transform: scale(1.05);
+    }
+    transition: all 0.3s ease-in-out;
+}
+.gr{
+    &:hover{
+        background-color: darkred;
+        
+    }
+    transition: all 0.3s ease-in-out;
+}
+.navigation li{
+    &:hover{
+        background-color: darkgrey;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+.line{
+    &:hover{
+        border-radius: 0%;
+    }
+}
